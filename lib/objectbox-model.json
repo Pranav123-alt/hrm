@@ -1,0 +1,76 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:2858139703729653879",
+      "lastPropertyId": "2:7416763816876963643",
+      "name": "ThemesModel",
+      "properties": [
+        {
+          "id": "1:3518411691898815040",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7416763816876963643",
+          "name": "appLang",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:2871331295712293126",
+      "lastPropertyId": "6:1974263568147132260",
+      "name": "UserModel",
+      "properties": [
+        {
+          "id": "1:835678537992739319",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6284280803918922076",
+          "name": "fullName",
+          "type": 9
+        },
+        {
+          "id": "3:3870909451951315406",
+          "name": "phone",
+          "type": 9
+        },
+        {
+          "id": "4:380697650956085884",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "5:7524703512837789337",
+          "name": "password",
+          "type": 9
+        },
+        {
+          "id": "6:1974263568147132260",
+          "name": "userType",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:2871331295712293126",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
