@@ -18,6 +18,9 @@ import 'package:provider/src/provider.dart';
 import 'package:hrm/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
+import 'Screens/admin/add_employee.dart';
+import 'bloc_cubits/emp_cubit/emp_cubit.dart';
+
 late ObjectBox objectbox;
 
 Future<void> main() async {
@@ -38,6 +41,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => ThemeCubit(ThemeRepository())),
         BlocProvider(create: (context) => LoginCubit(AuthRepository())),
         BlocProvider(create: (context) => RegCubit(AuthRepository())),
+        BlocProvider(create: (context) => EmpCubit(AuthRepository())),
         BlocProvider(create: (context) => AuthCubit()..isSignedIn()),
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
@@ -78,7 +82,7 @@ class MyApp extends StatelessWidget {
                 } else if (authState is AuthLoginSuccess) {
                   return const HomeScreen();
                 } else if (authState is AuthLoginFailure) {
-                  return const LoginScreen();
+                  return AddEmployee();
                 }
                 return const SplashScreen();
               }),
