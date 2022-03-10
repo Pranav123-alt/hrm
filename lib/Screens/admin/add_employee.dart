@@ -611,14 +611,14 @@ class _AddEmployeeState extends State<AddEmployee> {
                 ),
                 const SizedBox(height: DIMENSION_10),
 
-                // 18 Wc Policy
+                // 18 WC Policy
 
                 InputTextFormFieldWidget(
                   controller: _wcPolicyController,
                   hintText: AppLocalization.of(context)!.translate('wcpolicy'),
                   textCapitalization: TextCapitalization.sentences,
                   textInputType: TextInputType.name,
-                  
+
                   actionKeyboard: TextInputAction.next,
                   prefixIcon: const Icon(
                     Icons.policy,
