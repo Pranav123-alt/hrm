@@ -269,28 +269,7 @@ class _AddEmployeeState extends State<AddEmployee> {
 
                 //5 Alternate mobile no.
 
-                InputTextFormFieldWidget(/*
-                  controller: _confirmPasswordController,
-                  hintText: AppLocalization.of(context)!.translate('cpass'),
-
-                  textCapitalization: TextCapitalization.sentences,
-                  textInputType: TextInputType.text,
-                  actionKeyboard: TextInputAction.next,
-                  obscureText: false,
-                  showSuffixIcon: false,
-                  maxLine: ONE,
-                  suffixIcon: const Icon(Icons.visibility,
-                      color: hoverColorDarkColor),
-                  prefixIcon:
-                  const Icon(Icons.lock, color: hoverColorDarkColor),
-                  errorMessage: state.confirmPassword.invalid
-                      ? AppLocalization.of(context)!.translate('pecpass')
-                      : null,
-                  onChange: (name) => context
-                      .read<EmpCubit>()
-                      .confirmPassword(name, _passwordController.text),
-                  parametersValidate:
-                  AppLocalization.of(context)!.translate('pecpass'), */
+                InputTextFormFieldWidget(
                   controller: _altMobileNumberController,
                   hintText: AppLocalization.of(context)!.translate('alpno'),
                   functionValidate: (val){
@@ -314,7 +293,7 @@ class _AddEmployeeState extends State<AddEmployee> {
                   AppLocalization.of(context)!.translate('pealpno'),
                 ),
 
-                // 6 Email
+                // 6 'Email
                 InputTextFormFieldWidget(
                   controller: _emailController,
                   hintText: AppLocalization.of(context)!.translate('email'),

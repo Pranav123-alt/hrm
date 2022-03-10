@@ -69,6 +69,7 @@ class _RegScreenState extends State<RegScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
+                //
                 children: [
                   _buildTitleWidget(),
                   const SizedBox(height: DIMENSION_30),
