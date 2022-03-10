@@ -618,6 +618,7 @@ class _AddEmployeeState extends State<AddEmployee> {
                   hintText: AppLocalization.of(context)!.translate('wcpolicy'),
                   textCapitalization: TextCapitalization.sentences,
                   textInputType: TextInputType.name,
+                  
                   actionKeyboard: TextInputAction.next,
                   prefixIcon: const Icon(
                     Icons.policy,
